@@ -1,0 +1,42 @@
+
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header class="header-custom" >
+        <mat-panel-title>
+         TCS Projects
+        </mat-panel-title>
+        <mat-panel-description>
+          Duration : March-2011 to May-2017
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+     <button class="mat-fab custom" [routerLink]="['/project', {outlets: {'tcs': ['adc']}}]">ADC</button>
+     <button class="mat-fab custom" [routerLink]="['/project', {outlets: {'tcs': ['saua']}}]">SAUA</button>
+     <button class="mat-fab custom" [routerLink]="['/project', {outlets: {'tcs': ['tdt']}}]">TDT</button>
+     <button class="mat-fab custom"[routerLink]="['/project', {outlets: {'tcs': ['cplus']}}]">C+/M+</button>
+    <!-- Named Router Outlet -->
+    <router-outlet name="tcs"></router-outlet>
+      
+     
+    </mat-expansion-panel>
+ 
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header class="header-custom">
+          <mat-panel-title>
+           Infosys Projects
+          </mat-panel-title>
+          <mat-panel-description>
+            Duration : June-2017 to Present
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <button class="mat-fab custom">Dow Jones</button>
+        <!-- <button class="mat-fab custom" routerLink = "./radial">GSI Radial</button> -->
+        <button class="mat-fab custom" [routerLink]="['/project', {outlets: {'infy': ['radial']}}]">Radial</button>
+        <router-outlet name="infy"></router-outlet>
+      </mat-expansion-panel>
+
+
+
+

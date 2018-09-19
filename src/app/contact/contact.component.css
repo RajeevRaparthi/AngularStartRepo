@@ -1,0 +1,16 @@
+.temp {
+  margin: 0 auto;
+   text-align: left;
+   width: 600px;
+   }
+   .contact-form {
+    margin: 0  auto;
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .contact-full-width {
+    width: 100%;
+  }
+  
